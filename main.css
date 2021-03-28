@@ -1,0 +1,81 @@
+body {
+    background-color: #333;
+    color: white;
+}
+
+.paper {
+    /*border: 3px solid red; */
+
+    width: 700px;
+    /*height: 700px;*/
+
+    margin: 30px auto;
+}
+
+.paper .clear {
+    clear: both;
+
+}
+
+.paper .image {
+    border: 20px solid white;
+
+    width: 700px;
+    height: 700px;
+    box-sizing: border-box;
+    background-image: url(https://i.picsum.photos/id/892/700/700.jpg?hmac=VCUAPf93qxPIBkL6peoj8qLrA0KUUwygBeay_AvsVpQ);
+}
+
+
+.paper .top-left-shadow,
+.paper .top-right-shadow,
+.paper .bottom-left-shadow,
+.paper .bottom-right-shadow {
+
+     ;
+
+     width: 350px;
+     height: 20px;
+     box-sizing: border-box;
+     float: left;
+}
+
+.paper .top-left-shadow {
+    box-shadow: 5px -10px 10px 5px #111;
+    transform: translateY(30px) rotate(2deg);
+
+    /*new*/
+    position: relative;
+    z-index: -1;
+
+}
+
+.paper .top-right-shadow {
+    box-shadow: -5px -10px 10px 5px #111;
+    transform: translateY(30px) rotate(-2deg);
+
+    /*new*/
+    position: relative;
+    z-index: -1;
+    
+}
+
+.paper .bottom-left-shadow {
+    box-shadow: 5px 15px 10px 5px #111;
+    transform: translateY(-30px) rotate(-1deg);
+
+    /*new*/
+    position: relative;
+    z-index: -1;
+    
+}
+
+.paper .bottom-right-shadow {
+    box-shadow: -5px 10px 10px 5px #111;
+    transform: translateY(-30px) rotate(-1deg);
+
+    /*new*/
+    position: relative;
+    z-index: -1;
+    
+}
